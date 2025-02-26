@@ -119,15 +119,6 @@ body {
     justify-content: space-between;
     align-items: baseline;
     font-size: 1.6vw;
-    margin-bottom: 2vh;
-}
-
-.about-header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 1.6vw;
-    margin-bottom: 2vh;
 }
 
 #image-container {
