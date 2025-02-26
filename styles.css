@@ -7,8 +7,11 @@
 @font-face {
     font-family: 'YourCustomFont';
     src: url('./SelectaTrial-Light.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YourCustomFont2';
+    src: url('./SelectaTrial-Medium.otf') format('truetype');
 }
 
 body {
@@ -65,7 +68,11 @@ body {
 }
 
 .horizontal-scroll a {
-    overflow: hidden;
+    overflow: hidden; /* Prevent extra scrolling */
+    
+
+    
+}
 
 .file {
     flex: 0 0 auto;
@@ -95,7 +102,7 @@ body {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;  
-    object-fit: cover; 
+    object-fit: cover; /* Ensures no blank spaces */
 }
 
 .about-section-title {
@@ -113,6 +120,29 @@ body {
     align-items: baseline;
     font-size: 1.6vw;
     margin-bottom: 2vh;
+}
+
+.about-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.6vw;
+    margin-bottom: 2vh;
+}
+
+#image-container {
+    position: fixed;
+    top: -1vh;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -2;
+}
+
+#dynamic-image {
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.13s ease-out;
 }
 
 a {
