@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('./SelectaTrial-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'YourCustomFont', sans-serif;
+    line-height: 1.5;
+    padding: 2vw;
+}
+
+.home-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2vh;
+    font-size: 1.6vw;
+}
+
+.home-paragraph {
+    font-size: 1.6vw;
+    max-width: 63vw;
+    margin-top: 1vh;
+}
+
+.nav-link {
+    font-size: 1.6vw;
+    text-decoration: none;
+    color: black;
+}
+
+.sliding-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9vh;
+    align-items: center;
+}
+
+.slide {
+    width: 76vw;
+    padding-bottom: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    justify-content: center;
+    width: 80vw; 
+    height: 80vh;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.file {
+    flex: 0 0 auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+.slideshow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 80vw;
+    height: 80vh; 
+    position: relative;
+}
+
+.slideshow img {
+    flex: 0 0 auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+.about-section-title {
+    font-size: 1.6vw;
+}
+
+.about-sub-item {
+    font-size: 1.6vw;
+    padding-left: 0vw;
+}
+
+.about-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#image-container {
+    position: fixed;
+    top: -1vh;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -2;
+}
+
+#dynamic-image {
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.13s ease-out;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    color: rgb(250, 86, 160);
+}
+
+
+@media (max-width: 1150px) {
+   
+    .slide {
+        width: 100vw;
+        padding-bottom: 2vh; 
+    }
+
+    .horizontal-scroll,
+    .slideshow {
+        width: 100vw; 
+        height: auto; 
+    }
+
+    .slideshow img,
+    .file {
+        height: auto; 
+        width: 100%; 
+        object-fit: contain; 
+    }
+
+    .home-header-content {
+        font-size: 2.5vw; 
+        margin-bottom: 3vh; 
+    }
+
+    .home-paragraph {
+        font-size: 2.5vw; 
+        max-width: 64vw; 
+        margin-top: 2vh;
+        text-align: justify; 
+    }
+
+    .nav-link {
+        font-size: 2.5vw; 
+    }
+
+    .about-section-title {
+        font-size: 2.5vw; 
+    }
+
+    .about-sub-item {
+        font-size: 2.5vw; 
+        padding-left: 1vw; 
+    }
+
+    #image-container {
+        width: 100vw; 
+        height: auto; 
+    }
+
+    #dynamic-image {
+        width: 100%; 
+        height: auto; 
+    }
+
+    a {
+        font-size: 2.5vw; 
+    }
+
+    a:hover {
+        color: rgb(250, 86, 160);
+    }
+}
