@@ -206,6 +206,7 @@ a:hover {
 
     .nav-link {
         font-size: 3.5vw; 
+        color: rgb(250, 86, 160);
     }
 
     .about-section-title {
@@ -214,7 +215,6 @@ a:hover {
 
     .about-sub-item {
         font-size: 3.5vw; 
-        
     }
 
     a {
