@@ -64,6 +64,9 @@ body {
     position: relative;
 }
 
+.horizontal-scroll a {
+    overflow: hidden;
+
 .file {
     flex: 0 0 auto;
     height: 100%;
@@ -86,6 +89,13 @@ body {
     height: 100%;
     width: 100%;
     object-fit: contain; 
+}
+
+#middle {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;  
+    object-fit: cover; 
 }
 
 .about-section-title {
