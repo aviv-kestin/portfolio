@@ -111,21 +111,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
-
-#image-container {
-    position: fixed;
-    top: -1vh;
-    left: 0;
-    width: 100vw;
-    height: auto;
-    z-index: -2;
-}
-
-#dynamic-image {
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.13s ease-out;
+    font-size: 1.6vw;
+    margin-bottom: 2vh;
 }
 
 a {
