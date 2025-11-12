@@ -301,6 +301,8 @@ body.project2 .sliding-content {
     .project1-text p,
     .project2-text p {
         font-size: 4.2vw;
+        max-width: 100vw;
+        text-align: justify;
     }
 }
 
