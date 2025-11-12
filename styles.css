@@ -28,16 +28,20 @@ body {
     font-size: 1.6vw;
 }
 
-.home-paragraph {
-    font-size: 1.6vw;
-    max-width: 63vw;
-    margin-top: 1vh;
-}
-
 .nav-link {
     font-size: 1.6vw;
     text-decoration: none;
     color: black;
+}
+
+.nav-link:hover {
+    color: rgb(250, 86, 160);
+}
+
+.home-paragraph {
+    font-size: 1.6vw;
+    max-width: 63vw;
+    margin-top: 1vh;
 }
 
 .sliding-content {
@@ -68,10 +72,7 @@ body {
 }
 
 .horizontal-scroll a {
-    overflow: hidden; /* Prevent extra scrolling */
-    
-
-    
+    overflow: hidden;
 }
 
 .file {
@@ -102,7 +103,7 @@ body {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;  
-    object-fit: cover; /* Ensures no blank spaces */
+    object-fit: cover;
 }
 
 .about-section-title {
@@ -141,13 +142,64 @@ a {
     color: black;
 }
 
-a:hover {
-    color: rgb(250, 86, 160);
+body.project1 .sliding-content,
+body.project2 .sliding-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
 }
 
+.project1-text,
+.project2-text {
+    margin-top: 0vh;
+    max-width: 63vw;
+}
+
+.project1-text p,
+.project2-text p {
+    font-family: 'YourCustomFont', sans-serif;
+    font-size: 1.6vw;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.project1-text p em,
+.project2-text p em {
+    font-style: italic;
+}
+
+.secondary-slideshow {
+    background: transparent;
+}
+
+.secondary-slideshow .horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+}
+
+.secondary-file {
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    scroll-snap-align: center;
+}
+
+.digital-component-wrapper {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media (max-width: 1075px) {
-   
     .slide {
         width: 100vw;
         padding-bottom: 2vh; 
@@ -208,13 +260,16 @@ a:hover {
     a:hover {
         color: rgb(250, 86, 160);
     }
+
+    .project1-text p,
+    .project2-text p {
+        font-size: 2.5vw;
+    }
 }
 
 @media (max-width: 450px) {
-
     .home-header-content {
         font-size: 4.2vw; 
-        
     }
 
     .home-paragraph {
@@ -240,10 +295,12 @@ a:hover {
     }
 
     .sliding-content {
-    margin-top: 6vh;
-    
-}
+        margin-top: 6vh;
+    }
 
-
+    .project1-text p,
+    .project2-text p {
+        font-size: 4.2vw;
+    }
 }
 
